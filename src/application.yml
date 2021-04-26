@@ -1,0 +1,51 @@
+thymeleaf:
+  cache: false
+  encoding: UTF-8
+  mode: HTML5
+  servlet:
+    content-type: text/html
+
+logging:
+  level:
+    com:
+      nowcoder:
+        community: debug
+mybatis:
+  configuration:
+    mapUnderscoreToCamelCase: true
+    useGeneratedKeys: true
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.mf.community.entity
+
+
+
+qiniu:
+  access-key: BL7j8ms35YT5dLqXvbtN_qth5W2gqSKQo0SOtNnk
+  bucket-name: mforum
+  domain: qs4lg1t3t.hn-bkt.clouddn.com
+  region: huanan
+  secret-key: 0x9K0HOoGytkFWyy4KOTa-xDbyKjFf3rvRqRpYId
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      idle-timeout: 30000
+      maximum-pool-size: 15
+      minimum-idle: 5
+    password: J7shMYApenfzcHGm
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://skycase.cn:3306/community?characterEncoding=utf-8&useSSL=false&serverTimezone=Hongkong
+    username: OdUser
+  mail:
+    host: smtp.sina.com
+    password: f422cdf1e0ccc5b6
+    port: 465
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+    protocol: smtps
+    username: skybox2022@sina.com
+
